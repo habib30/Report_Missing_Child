@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sv_scroll_id">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/user_profile"
+                android:id="@+id/iv_user_profile_id"
+                android:layout_marginTop="10dp">
+
+            </ImageView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_chooseImage_id"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Choose Image"
+                android:background="@drawable/choose_image_border"
+                android:textColor="@color/colorWhite"
+                android:padding="18dp">
+
+            </Button>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="510dp"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/layout_border"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_details_id"
+                    android:text="Enter Child's Details"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_realName_id"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:hint="Child's Real Name"
+                    android:background="@drawable/eddittexts_border"
+                    android:gravity="center"
+                    android:padding="12dp">
+
+                </EditText>
+
+                <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_nickName_id"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:hint="Child's Nick Name"
+                    android:background="@drawable/eddittexts_border"
+                    android:gravity="center"
+                    android:padding="12dp">
+
+                </EditText>
+
+                <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_homeArea_id"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:hint="Child's Home Area"
+                    android:background="@drawable/eddittexts_border"
+                    android:gravity="center"
+                    android:padding="12dp">
+
+                </EditText>
+
+                <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_school_id"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:hint="Child's School"
+                    android:background="@drawable/eddittexts_border"
+                    android:gravity="center"
+                    android:padding="12dp">
+
+                </EditText>
+
+                <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_lastSeen_id"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:hint="Where Was The Child Last Seen At?"
+                    android:background="@drawable/eddittexts_border"
+                    android:gravity="center"
+                    android:padding="12dp">
+
+                </EditText>
+
+                <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_DOB_id"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:hint="Child's Date Of Birth DD/MM/YYYY"
+                    android:background="@drawable/eddittexts_border"
+                    android:gravity="center"
+                    android:padding="12dp">
+
+                </EditText>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_missing_id"
+                    android:text="Is The Missing Child A Girl Or A Boy?"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rbn_boy_id"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="15dp"
+                        android:text="Boy"
+                        android:textStyle="bold">
+
+                    </RadioButton>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbn_girl_id"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:text="Girl"
+                    android:textStyle="bold">
+
+                </RadioButton>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layout_border"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_guardian_details_id"
+                android:text="Parent/Guardian's Details"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="12dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_guardianDetails_id"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:hint="Parent/Guardian's Name"
+                android:background="@drawable/eddittexts_border"
+                android:gravity="center"
+                android:padding="12dp">
+
+            </EditText>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ev_code_id"
+                    android:text="KE +254"
+                    android:background="@drawable/eddittexts_border"
+                    android:padding="12dp"
+                    android:layout_marginStart="30dp">
+
+                </EditText>
+
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone Number"
+                    android:background="@drawable/eddittexts_border"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:inputType="number"
+                    android:id="@+id/et_number_id">
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="How Are You Related To The Missing Child?"
+                    android:id="@+id/tv_relation_id">
+
+                </TextView>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbn_father_id"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:text="I'm The Child's Father"
+                    android:textStyle="bold">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbn_mother_id"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:text="I'm The Child's Mother"
+                    android:textStyle="bold">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbn_guardian_id"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:text="I'm The Child's Guardian"
+                    android:textStyle="bold">
+
+                </RadioButton>
+            </LinearLayout>
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/layout_border">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Child's Attire"
+                    android:id="@+id/tv_attire_id"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="12dp">
+
+                </TextView>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_childAttire_id"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:hint="What Type Of Clothes Was The Child Last Seen Wearing?"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:background="@drawable/eddittexts_border"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/layout_border"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="More Information"
+                    android:id="@+id/tv_moreInfo_id"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="12sp">
+
+                </TextView>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_addInfo_id"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:hint="Provide Any Other Information That Could Help Describe The Child"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:background="@drawable/eddittexts_border"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                </EditText>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_submit_id"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Submit Details"
+                android:background="@drawable/choose_image_border"
+                android:padding="15dp"
+                android:textColor="@color/colorWhite">
+
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
